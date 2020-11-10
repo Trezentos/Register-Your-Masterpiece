@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Masterpiece</title>
+</head>
+<body>
+    <div id="landing-page">
+        <div class="landing-page container">
+            <div class="pop-up">
+                <p>Teste</p>
+            </div>
+            <header>
+                <h2>Informe aqui a sua obra favorita!</h2>
+            </header>
+            <fieldset >
+               <legend>Dados da Obra</legend>  
+               <div class="input-block">
+                    <label for="name" >Nome da obra</label>
+                    <input type="text" id="name" placeholder="Ex: Abaporu" maxlength="100" >
+               </div>
+               <div class="input-block">
+                    <label for="author" >Autor</label>
+                    <input type="text" id="author" placeholder="Ex: Machado de Assis" maxlength="100" >
+               </div>
+               <div class="input-block">
+                    <label for="year" >Ano</label>
+                    <input type="text" id="year" placeholder="Ex: 1943" maxlength="4"  >
+               </div>
+               <div class="input-block">
+                    <label for="period" >Período</label>
+                    <select >
+                        <option id="period" value="" hidden >Selecione uma opção</option>
+                        <option id="period" value="a.C" >a.C</option>
+                        <option id="period" value="d.C" >d.C</option>               
+                    </select>
+               </div>
+               <div class="input-block">
+                <label for="kind" >Tipo</label>
+                <select >
+                    <option id="kind" value="" hidden >Selecione uma opção</option>
+                    <option id="kind" value="Escultura" >Escultura</option>
+                    <option id="kind" value="Quadro" >Quadro</option>  
+                    <option id="kind" value="Outro" >Outro...</option>             
+                </select>
+               </div>
+               <div class="input-block select-block" >
+                    <label for="detailing" >Detalhamento</label>
+                    <textarea id="detailing" rows="4" cols="35" maxlength="200"  > </textarea>
+               </div>                 
+               <button id="register-button">Registrar</button>               
+            </fieldset>
+            <fieldset>
+                <legend>Obras Registradas</legend>
+                <table id="works-table">
+                    <tr>
+                        <th>Nome da Obra</th>
+                        <th>Autor</th>
+                        <th>Ano</th>
+                        <th>Periodo</th>
+                        <th>Tipo</th>
+                      </tr>
+                    </table>
+                </table>
+            </fieldset>
+        </div>
+    </div>
+    <script src="script.js" ></script>
+</body>
+</html>
